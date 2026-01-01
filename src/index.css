@@ -44,9 +44,9 @@
 
     --radius: 0.5rem;
 
-    /* JavaScript Yellow Accent */
-    --js-yellow: 48 96% 53%;
-    --js-yellow-foreground: 222 47% 11%;
+    /* React Blue Accent */
+    --react-blue: 199 89% 48%;
+    --react-blue-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -90,8 +90,8 @@
     --input: 222 47% 20%;
     --ring: 217 91% 60%;
 
-    --js-yellow: 48 96% 53%;
-    --js-yellow-foreground: 222 47% 11%;
+    --react-blue: 199 89% 48%;
+    --react-blue-foreground: 0 0% 100%;
 
     --sidebar-background: 222 47% 8%;
     --sidebar-foreground: 0 0% 98%;

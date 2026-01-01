@@ -16,7 +16,7 @@ const plans = [
     features: [
       "Complete course syllabus PDF",
       "First 3 lessons access",
-      "JavaScript cheat sheet",
+      "React cheat sheet",
       "Community forum access",
     ],
     cta: "Download Free Guide",
@@ -26,13 +26,14 @@ const plans = [
   {
     name: "Complete Course",
     icon: Zap,
-    price: "$197",
-    originalPrice: "$397",
-    description: "Everything you need to master JavaScript",
+    price: "₹12,999",
+    originalPrice: "₹24,999",
+    description: "Everything you need to master ReactJS",
     features: [
-      "Full 12-week curriculum",
+      "Full 4-week intensive curriculum",
       "40+ hours of video content",
       "10+ hands-on projects",
+      "3 Enterprise Applications",
       "Downloadable resources",
       "Certificate of completion",
       "Lifetime access & updates",
@@ -45,11 +46,12 @@ const plans = [
   {
     name: "Premium",
     icon: Crown,
-    price: "$497",
-    originalPrice: "$797",
+    price: "₹24,999",
+    originalPrice: "₹39,999",
     description: "Accelerate your learning with mentorship",
     features: [
       "Everything in Complete Course",
+      "3 Enterprise Applications",
       "1-on-1 mentorship sessions (4x)",
       "Code review for your projects",
       "Resume & portfolio review",
@@ -90,7 +92,7 @@ const Pricing = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-16 md:py-24">
         <div className="container text-center">
-          <div className="inline-flex items-center gap-2 bg-js-yellow/20 text-js-yellow px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Rocket className="h-4 w-4" />
             Invest in Your Future
           </div>
@@ -143,7 +145,7 @@ const Pricing = () => {
                   </div>
                   {plan.originalPrice && (
                     <span className="text-sm text-success font-medium">
-                      Save {Math.round((1 - parseInt(plan.price.replace('$', '')) / parseInt(plan.originalPrice.replace('$', ''))) * 100)}%
+                      Save {Math.round((1 - parseInt(plan.price.replace(/[₹,]/g, '')) / parseInt(plan.originalPrice.replace(/[₹,]/g, ''))) * 100)}%
                     </span>
                   )}
                 </div>

@@ -24,10 +24,10 @@ export function Header({ onOpenLeadModal }: HeaderProps) {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-js-yellow">
-            <Code2 className="h-5 w-5 text-js-yellow-foreground" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-react-blue">
+            <Code2 className="h-5 w-5 text-react-blue-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">JSMastery</span>
+          <span className="text-xl font-bold text-foreground">ReactMastery</span>
         </Link>
 
         {/* Desktop Navigation */}

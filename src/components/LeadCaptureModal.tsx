@@ -100,7 +100,7 @@ export function LeadCaptureModal({ open, onOpenChange }: LeadCaptureModalProps) 
                 Get Your Free Course Guide
               </DialogTitle>
               <DialogDescription>
-                Enter your details below to download the complete JavaScript mastery curriculum guide.
+                Enter your details below to download the complete 4-week ReactJS mastery curriculum guide.
               </DialogDescription>
             </DialogHeader>
 

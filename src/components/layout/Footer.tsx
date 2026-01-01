@@ -21,13 +21,13 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-js-yellow">
-                <Code2 className="h-5 w-5 text-js-yellow-foreground" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-react-blue">
+                <Code2 className="h-5 w-5 text-react-blue-foreground" />
               </div>
-              <span className="text-xl font-bold">JSMastery</span>
+              <span className="text-xl font-bold">ReactMastery</span>
             </Link>
             <p className="text-primary-foreground/80 max-w-md mb-6">
-              Master JavaScript from beginner to advanced with our comprehensive training program.
+              Master ReactJS from beginner to advanced with our comprehensive training program.
               Join thousands of developers who've transformed their careers.
             </p>
             <div className="flex gap-4">
@@ -40,7 +40,7 @@ export function Footer() {
               <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="mailto:hello@jsmastery.com" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors" aria-label="Email">
+              <a href="mailto:hello@reactmastery.com" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -82,7 +82,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>© {new Date().getFullYear()} JSMastery. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ReactMastery. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const testimonials = [
     role: "Frontend Developer at Stripe",
     initials: "SC",
     rating: 5,
-    content: "This course completely transformed my career. I went from struggling with basic JavaScript to landing a job at Stripe within 6 months. The project-based approach made everything click.",
+    content: "This course completely transformed my career. I went from struggling with basic React to landing a job at Stripe within 6 months. The project-based approach made everything click.",
     outcome: "Hired at Stripe",
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     role: "Freelance Developer",
     initials: "MR",
     rating: 5,
-    content: "As someone who tried multiple online courses, this one stands out. Alex explains complex concepts in a way that just makes sense. The async/await section alone was worth the entire course.",
+    content: "As someone who tried multiple online courses, this one stands out. Alex explains complex React concepts in a way that just makes sense. The Hooks section alone was worth the entire course.",
     outcome: "3x Income as Freelancer",
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
     role: "Full-Stack Developer at Shopify",
     initials: "EW",
     rating: 5,
-    content: "I was a complete beginner with zero coding experience. Now I'm building features used by millions of merchants. This course gave me the foundation I needed to succeed.",
+    content: "I was a complete beginner with zero React experience. Now I'm building features used by millions of merchants. This course gave me the React foundation I needed to succeed.",
     outcome: "Career Changer Success",
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
     role: "Startup Founder",
     initials: "DK",
     rating: 5,
-    content: "Built my entire SaaS product using skills I learned here. The curriculum covers everything you need to build production-ready applications. Best investment I've made.",
+    content: "Built my entire SaaS product using React skills I learned here. The curriculum covers everything you need to build production-ready React applications. Best investment I've made.",
     outcome: "Launched Own Startup",
   },
   {
@@ -42,7 +42,7 @@ const testimonials = [
     role: "Junior Developer at Microsoft",
     initials: "JP",
     rating: 5,
-    content: "The testing and design patterns modules set this course apart from others. I felt prepared not just to write code, but to write professional, maintainable code.",
+    content: "The testing and performance optimization modules set this course apart from others. I felt prepared not just to write React code, but to write professional, maintainable React applications.",
     outcome: "Hired at Microsoft",
   },
   {
@@ -50,7 +50,7 @@ const testimonials = [
     role: "Tech Lead at Adobe",
     initials: "RT",
     rating: 5,
-    content: "Even as an experienced developer, I learned new patterns and best practices. This course is valuable for developers at any level who want to truly master JavaScript.",
+    content: "Even as an experienced developer, I learned new React patterns and best practices. This course is valuable for developers at any level who want to truly master React.",
     outcome: "Promoted to Tech Lead",
   },
 ];
@@ -68,7 +68,7 @@ const Testimonials = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-16 md:py-24">
         <div className="container text-center">
-          <div className="inline-flex items-center gap-2 bg-js-yellow/20 text-js-yellow px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Star className="h-4 w-4 fill-current" />
             Student Success Stories
           </div>
@@ -76,7 +76,7 @@ const Testimonials = () => {
             What Our Students Say
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Real stories from real developers who transformed their careers with JSMastery.
+            Real stories from real developers who transformed their careers with ReactMastery.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ const Testimonials = () => {
               <CardContent className="pt-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-js-yellow text-js-yellow" />
+                    <Star key={i} className="h-4 w-4 fill-react-blue text-react-blue" />
                   ))}
                 </div>
 

@@ -18,24 +18,24 @@ const benefits = [
   {
     icon: BookOpen,
     title: "Comprehensive Curriculum",
-    description: "From basics to advanced concepts, covering everything you need to master JavaScript.",
+    description: "From components to advanced patterns, covering everything you need to master ReactJS in just 4 weeks.",
   },
   {
     icon: Code,
-    title: "Hands-On Projects",
-    description: "Build real-world applications and portfolio-worthy projects throughout the course.",
+    title: "3 Enterprise Applications",
+    description: "Build E-commerce Platform, SaaS Dashboard, and Social Media App - real-world projects that showcase your skills.",
   },
   {
     icon: Zap,
     title: "Career-Ready Skills",
-    description: "Learn industry best practices and modern JavaScript patterns used by top companies.",
+    description: "Learn industry best practices and modern React patterns used by top companies.",
   },
 ];
 
 const curriculumPreview = [
-  { level: "Beginner", topics: ["Variables & Data Types", "Functions & Scope", "DOM Manipulation", "Event Handling"] },
-  { level: "Intermediate", topics: ["Async/Await & Promises", "API Integration", "ES6+ Features", "Error Handling"] },
-  { level: "Advanced", topics: ["Design Patterns", "Testing & TDD", "Performance Optimization", "Framework Fundamentals"] },
+  { level: "Week 1", topics: ["Components & JSX", "Props & State", "Event Handling", "Conditional Rendering"] },
+  { level: "Week 2", topics: ["React Hooks", "Context API", "React Router", "Forms & Validation"] },
+  { level: "Week 3-4", topics: ["Performance & Testing", "State Management", "3 Enterprise Apps", "React 19 Features"] },
 ];
 
 const Index = () => {
@@ -47,17 +47,17 @@ const Index = () => {
       <section className="bg-gradient-hero text-primary-foreground py-20 md:py-32">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-js-yellow/20 text-js-yellow px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <span className="code-font">{"{ JavaScript }"}</span>
+            <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <span className="code-font">{"⚛️ React"}</span>
               <span>Master Class 2025</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              From Zero to JavaScript Hero in 12 Weeks
+              From Zero to React Hero in 4 Weeks
             </h1>
             
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Join thousands of developers who've transformed their careers with our comprehensive JavaScript training program. Go from beginner to job-ready with hands-on projects and expert guidance.
+              Join thousands of developers who've transformed their careers with our comprehensive ReactJS training program. Go from beginner to job-ready with hands-on projects and expert guidance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,7 +72,7 @@ const Index = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-js-yellow text-js-yellow-foreground hover:bg-js-yellow/90 font-semibold"
+                className="bg-react-blue text-react-blue-foreground hover:bg-react-blue/90 font-semibold"
                 asChild
               >
                 <Link to="/pricing">
@@ -129,7 +129,7 @@ const Index = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What You'll Learn</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A complete roadmap from JavaScript fundamentals to advanced concepts.
+            A complete roadmap from React fundamentals to advanced concepts.
           </p>
         </div>
 
@@ -175,7 +175,7 @@ const Index = () => {
         <Card className="bg-gradient-hero text-primary-foreground border-0">
           <CardContent className="py-12 md:py-16 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Start Your JavaScript Journey?
+              Ready to Start Your React Journey?
             </h2>
             <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
               Download our free course guide and discover exactly what you'll learn. No commitment required.
@@ -192,7 +192,7 @@ const Index = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-js-yellow text-js-yellow-foreground hover:bg-js-yellow/90 font-semibold"
+                className="bg-react-blue text-react-blue-foreground hover:bg-react-blue/90 font-semibold"
                 asChild
               >
                 <Link to="/pricing">View Pricing</Link>

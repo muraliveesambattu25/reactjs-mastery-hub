@@ -47,9 +47,9 @@ export default {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
         },
-        "js-yellow": {
-          DEFAULT: "hsl(var(--js-yellow))",
-          foreground: "hsl(var(--js-yellow-foreground))",
+        "react-blue": {
+          DEFAULT: "hsl(var(--react-blue))",
+          foreground: "hsl(var(--react-blue-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",

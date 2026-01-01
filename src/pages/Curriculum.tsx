@@ -11,136 +11,174 @@ import {
 
 const modules = [
   {
-    level: "Beginner",
+    level: "Week 1: Beginner",
     icon: BookOpen,
     color: "bg-success/10 text-success border-success/20",
-    duration: "4 weeks",
-    description: "Build a solid foundation with JavaScript fundamentals",
+    duration: "1 week",
+    description: "Build a solid foundation with React fundamentals",
     topics: [
       {
-        title: "JavaScript Fundamentals",
+        title: "Introduction to React & JSX",
         lessons: [
-          "Introduction to JavaScript & Development Environment",
-          "Variables, Constants & Data Types",
-          "Operators & Expressions",
-          "Control Flow: Conditionals & Loops",
+          "What is React & Why Use It",
+          "Setting Up Development Environment",
+          "Understanding JSX Syntax",
+          "Creating Your First React Component",
         ],
       },
       {
-        title: "Functions & Scope",
+        title: "Components & Props",
         lessons: [
-          "Function Declarations & Expressions",
-          "Parameters, Arguments & Return Values",
-          "Scope & Closures Explained",
-          "Arrow Functions & Modern Syntax",
+          "Functional Components vs Class Components",
+          "Understanding Props & Prop Types",
+          "Component Composition",
+          "Building Reusable Components",
         ],
       },
       {
-        title: "DOM Manipulation",
+        title: "State & Event Handling",
         lessons: [
-          "Understanding the Document Object Model",
-          "Selecting & Modifying Elements",
-          "Creating & Removing Elements",
-          "Traversing the DOM Tree",
+          "Understanding Component State",
+          "Using useState Hook",
+          "Handling User Events",
+          "Controlled vs Uncontrolled Components",
         ],
       },
       {
-        title: "Events & Interactivity",
+        title: "Conditional Rendering & Lists",
         lessons: [
-          "Event Listeners & Event Objects",
-          "Event Bubbling & Delegation",
-          "Form Handling & Validation",
-          "Building Interactive UI Components",
+          "Conditional Rendering Patterns",
+          "Rendering Lists with map()",
+          "Keys in React Lists",
+          "Building a Todo App Project",
         ],
       },
     ],
   },
   {
-    level: "Intermediate",
+    level: "Week 2: Intermediate",
     icon: Code2,
     color: "bg-accent/10 text-accent border-accent/20",
-    duration: "4 weeks",
-    description: "Master asynchronous JavaScript and modern ES6+ features",
+    duration: "1 week",
+    description: "Master React Hooks, Routing, and Context API",
     topics: [
       {
-        title: "Asynchronous JavaScript",
+        title: "React Hooks Deep Dive",
         lessons: [
-          "Understanding Callbacks",
-          "Promises & Promise Chaining",
-          "Async/Await Syntax",
-          "Error Handling in Async Code",
+          "useState & useEffect Hooks",
+          "useContext & Custom Hooks",
+          "useReducer for Complex State",
+          "Rules of Hooks & Best Practices",
         ],
       },
       {
-        title: "Working with APIs",
+        title: "React Router & Navigation",
         lessons: [
-          "Introduction to REST APIs",
-          "Fetch API & HTTP Methods",
-          "Handling JSON Data",
-          "Building a Weather App Project",
+          "Setting Up React Router",
+          "Route Configuration & Navigation",
+          "URL Parameters & Query Strings",
+          "Protected Routes & Authentication",
         ],
       },
       {
-        title: "ES6+ Modern JavaScript",
+        title: "Forms & Controlled Components",
         lessons: [
-          "Destructuring & Spread Operator",
-          "Template Literals & Tagged Templates",
-          "Classes & Object-Oriented JavaScript",
-          "Modules: Import & Export",
+          "Building Forms in React",
+          "Form Validation & Error Handling",
+          "Using React Hook Form",
+          "Building a Contact Form Project",
         ],
       },
       {
-        title: "Advanced Data Handling",
+        title: "Context API for State Management",
         lessons: [
-          "Array Methods: map, filter, reduce",
-          "Working with Objects & JSON",
-          "Local Storage & Session Storage",
-          "Data Transformation Patterns",
+          "Understanding Context API",
+          "Creating & Using Context",
+          "Context vs Props Drilling",
+          "Building a Theme Switcher",
         ],
       },
     ],
   },
   {
-    level: "Advanced",
+    level: "Week 3: Advanced",
     icon: Terminal,
     color: "bg-primary/10 text-primary border-primary/20",
-    duration: "4 weeks",
-    description: "Learn professional patterns, testing, and framework fundamentals",
+    duration: "1 week",
+    description: "Learn production-ready React patterns, testing, and optimization",
     topics: [
       {
-        title: "Design Patterns",
+        title: "Performance Optimization",
         lessons: [
-          "Module & Revealing Module Pattern",
-          "Factory & Singleton Patterns",
-          "Observer & Pub/Sub Patterns",
-          "MVC Architecture Basics",
-        ],
-      },
-      {
-        title: "Testing & TDD",
-        lessons: [
-          "Introduction to Unit Testing",
-          "Jest Testing Framework",
-          "Test-Driven Development Workflow",
-          "Mocking & Integration Tests",
-        ],
-      },
-      {
-        title: "Performance & Optimization",
-        lessons: [
-          "JavaScript Performance Metrics",
-          "Memory Management & Garbage Collection",
-          "Debouncing & Throttling",
+          "React.memo & useMemo",
+          "useCallback Hook",
           "Code Splitting & Lazy Loading",
+          "React DevTools Profiling",
         ],
       },
       {
-        title: "Framework Fundamentals",
+        title: "Testing with React Testing Library",
         lessons: [
-          "Understanding Component-Based Architecture",
-          "State Management Concepts",
-          "Virtual DOM & Reconciliation",
-          "Introduction to React Basics",
+          "Setting Up Testing Environment",
+          "Writing Component Tests",
+          "Testing User Interactions",
+          "Mocking & Integration Testing",
+        ],
+      },
+      {
+        title: "State Management Solutions",
+        lessons: [
+          "Redux Toolkit Fundamentals",
+          "Zustand for Lightweight State",
+          "Choosing the Right State Solution",
+          "Building a Shopping Cart App",
+        ],
+      },
+    ],
+  },
+  {
+    level: "Week 4: Enterprise Projects",
+    icon: Layers,
+    color: "bg-react-blue/10 text-react-blue border-react-blue/20",
+    duration: "1 week",
+    description: "Build 3 enterprise-level applications and master React 19 features",
+    topics: [
+      {
+        title: "React 19: Latest Features & Patterns",
+        lessons: [
+          "What's New in React 19 & Migration Guide",
+          "React Server Components: Understanding & Implementation",
+          "React Actions & useActionState Hook",
+          "useEffectEvent Hook: Extracting Non-Reactive Logic",
+          "Activity Component: Managing UI State Lifecycle",
+          "cacheSignal for Server Components & Performance",
+        ],
+      },
+      {
+        title: "Enterprise Project 1: E-commerce Platform",
+        lessons: [
+          "Project Architecture & Setup",
+          "Product Catalog & Search",
+          "Shopping Cart & Checkout",
+          "Payment Integration & Order Management",
+        ],
+      },
+      {
+        title: "Enterprise Project 2: SaaS Dashboard",
+        lessons: [
+          "Dashboard Layout & Navigation",
+          "Analytics & Data Visualization",
+          "User Management System",
+          "Settings & Configuration",
+        ],
+      },
+      {
+        title: "Enterprise Project 3: Social Media App",
+        lessons: [
+          "User Authentication & Profiles",
+          "Post Creation & Feed",
+          "Comments, Likes & Interactions",
+          "Real-time Updates & Notifications",
         ],
       },
     ],
@@ -153,15 +191,15 @@ const Curriculum = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-16 md:py-24">
         <div className="container text-center">
-          <div className="inline-flex items-center gap-2 bg-js-yellow/20 text-js-yellow px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Layers className="h-4 w-4" />
             Complete Learning Path
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Full JavaScript Curriculum
+            Full ReactJS Curriculum
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            A structured 12-week program taking you from absolute beginner to confident JavaScript developer.
+            A structured 4-week intensive program taking you from absolute beginner to confident React developer.
           </p>
         </div>
       </section>
@@ -178,7 +216,7 @@ const Curriculum = () => {
                       <module.icon className="h-7 w-7" />
                     </div>
                     <div>
-                      <CardTitle className="text-2xl">{module.level} Level</CardTitle>
+                      <CardTitle className="text-2xl">{module.level}</CardTitle>
                       <p className="text-muted-foreground">{module.description}</p>
                     </div>
                   </div>

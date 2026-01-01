@@ -1,4 +1,14 @@
-# Welcome to your Lovable project
+# ReactMastery - ReactJS Learning Platform
+
+A comprehensive ReactJS training platform designed to take students from beginner to advanced React developers through a structured 4-week intensive curriculum. The platform features a modern, responsive design built with React, TypeScript, and Tailwind CSS.
+
+## Project Overview
+
+ReactMastery is an educational platform that offers:
+- **4-Week Intensive Curriculum**: From React fundamentals to advanced patterns
+- **Three Learning Levels**: Beginner, Intermediate, and Advanced
+- **Project-Based Learning**: Hands-on React applications and portfolio projects
+- **Comprehensive Content**: Covers Hooks, Routing, State Management, Testing, Performance, and React 19 Features
 
 ## Project info
 
