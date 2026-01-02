@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.sqlite
+*.sqlite-journal
+database/leads.json
+public/downloads/*.pdf
+.DS_Store
+*.log
+

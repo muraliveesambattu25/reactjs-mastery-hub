@@ -1,4 +1,4 @@
-import { CheckCircle, Clock, BookOpen, Code2, Terminal, Layers } from "lucide-react";
+import { CheckCircle, Clock, BookOpen, Code2, Terminal, Layers, FileCode, Settings } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,9 +11,99 @@ import {
 
 const modules = [
   {
-    level: "Week 1: Beginner",
+    level: "Week 1: Phase 1 - JavaScript Fundamentals (ES6+ Basics)",
     icon: BookOpen,
     color: "bg-success/10 text-success border-success/20",
+    duration: "1 week",
+    description: "Master modern JavaScript fundamentals essential for React development",
+    topics: [
+      {
+        title: "Variables & Scoping",
+        lessons: [
+          "let, const, and var - Understanding Differences",
+          "Block Scoping & Temporal Dead Zone",
+          "Hoisting in JavaScript",
+          "Best Practices for Variable Declarations",
+        ],
+      },
+      {
+        title: "Arrow Functions & Template Literals",
+        lessons: [
+          "Arrow Function Syntax & Lexical this",
+          "When to Use Arrow Functions",
+          "Template Literals & String Interpolation",
+          "Tagged Template Literals",
+        ],
+      },
+      {
+        title: "Destructuring & Spread Operators",
+        lessons: [
+          "Array Destructuring",
+          "Object Destructuring",
+          "Spread Operator (...)",
+          "Rest Parameters & Rest Properties",
+        ],
+      },
+      {
+        title: "Default Parameters & Enhanced Object Literals",
+        lessons: [
+          "Default Function Parameters",
+          "Enhanced Object Literals",
+          "Computed Property Names",
+          "Shorthand Property & Method Syntax",
+        ],
+      },
+    ],
+  },
+  {
+    level: "Week 2: Phase 1 - Advanced JavaScript",
+    icon: Code2,
+    color: "bg-success/10 text-success border-success/20",
+    duration: "1 week",
+    description: "Deep dive into async JavaScript, modules, and advanced patterns",
+    topics: [
+      {
+        title: "Promises & Async/Await",
+        lessons: [
+          "Understanding Promises",
+          "Promise Chaining & Error Handling",
+          "Async/Await Syntax",
+          "Promise.all, Promise.race & Promise.allSettled",
+        ],
+      },
+      {
+        title: "Array Methods & Functional Programming",
+        lessons: [
+          "map, filter, reduce Deep Dive",
+          "find, some, every Methods",
+          "flatMap & Array Flattening",
+          "Functional Programming Patterns",
+        ],
+      },
+      {
+        title: "ES6 Modules & Code Organization",
+        lessons: [
+          "import/export Syntax",
+          "Default vs Named Exports",
+          "Module Bundling Concepts",
+          "Code Organization Best Practices",
+        ],
+      },
+      {
+        title: "Classes, Prototypes & Error Handling",
+        lessons: [
+          "ES6 Classes & Inheritance",
+          "Prototypes & Prototype Chain",
+          "try/catch & Error Handling",
+          "Custom Error Classes",
+        ],
+      },
+    ],
+  },
+  {
+    level: "Week 3: Phase 2 - React Fundamentals",
+    icon: BookOpen,
+    color: "bg-accent/10 text-accent border-accent/20",
     duration: "1 week",
     description: "Build a solid foundation with React fundamentals",
     topics: [
@@ -56,7 +146,7 @@ const modules = [
     ],
   },
   {
-    level: "Week 2: Intermediate",
+    level: "Week 4: Phase 2 - React Intermediate",
     icon: Code2,
     color: "bg-accent/10 text-accent border-accent/20",
     duration: "1 week",
@@ -101,9 +191,9 @@ const modules = [
     ],
   },
   {
-    level: "Week 3: Advanced",
+    level: "Week 5: Phase 2 - React Advanced",
     icon: Terminal,
-    color: "bg-primary/10 text-primary border-primary/20",
+    color: "bg-accent/10 text-accent border-accent/20",
     duration: "1 week",
     description: "Learn production-ready React patterns, testing, and optimization",
     topics: [
@@ -137,14 +227,59 @@ const modules = [
     ],
   },
   {
-    level: "Week 4: Enterprise Projects",
-    icon: Layers,
-    color: "bg-react-blue/10 text-react-blue border-react-blue/20",
+    level: "Week 6: Phase 3 - TypeScript Fundamentals",
+    icon: FileCode,
+    color: "bg-primary/10 text-primary border-primary/20",
     duration: "1 week",
-    description: "Build 3 enterprise-level applications and master React 19 features",
+    description: "Master TypeScript basics and integrate with React",
     topics: [
       {
-        title: "React 19: Latest Features & Patterns",
+        title: "TypeScript Basics & Setup",
+        lessons: [
+          "What is TypeScript & Why Use It",
+          "Setting Up TypeScript in React Project",
+          "TypeScript Configuration (tsconfig.json)",
+          "TypeScript vs JavaScript",
+        ],
+      },
+      {
+        title: "Types, Interfaces & Generics",
+        lessons: [
+          "Primitive Types & Type Annotations",
+          "Interfaces & Type Aliases",
+          "Union & Intersection Types",
+          "Generics & Generic Constraints",
+        ],
+      },
+      {
+        title: "TypeScript with React Components",
+        lessons: [
+          "Typing React Components",
+          "Component Props Types",
+          "Typing Component State",
+          "Typing Event Handlers",
+        ],
+      },
+      {
+        title: "Advanced TypeScript Patterns",
+        lessons: [
+          "Utility Types (Partial, Pick, Omit)",
+          "Conditional Types",
+          "Type Guards & Type Narrowing",
+          "TypeScript Best Practices",
+        ],
+      },
+    ],
+  },
+  {
+    level: "Week 7: Phase 3 - Advanced TypeScript & React",
+    icon: Settings,
+    color: "bg-primary/10 text-primary border-primary/20",
+    duration: "1 week",
+    description: "Advanced TypeScript patterns, React 19 features, and optimization",
+    topics: [
+      {
+        title: "React 19 Features with TypeScript",
         lessons: [
           "What's New in React 19 & Migration Guide",
           "React Server Components: Understanding & Implementation",
@@ -155,9 +290,45 @@ const modules = [
         ],
       },
       {
+        title: "Advanced TypeScript Patterns in React",
+        lessons: [
+          "Typing Hooks & Custom Hooks",
+          "Typing Context API",
+          "Typing Higher-Order Components",
+          "Generic Components & Props",
+        ],
+      },
+      {
+        title: "Performance Optimization with TypeScript",
+        lessons: [
+          "TypeScript Performance Tips",
+          "Code Splitting with TypeScript",
+          "Type-Safe State Management",
+          "Optimizing Bundle Size",
+        ],
+      },
+      {
+        title: "Testing with TypeScript",
+        lessons: [
+          "Setting Up TypeScript Testing",
+          "Typing Test Utilities",
+          "Type-Safe Mocking",
+          "Integration Testing Patterns",
+        ],
+      },
+    ],
+  },
+  {
+    level: "Week 8: Phase 3 - Enterprise Projects",
+    icon: Layers,
+    color: "bg-react-blue/10 text-react-blue border-react-blue/20",
+    duration: "1 week",
+    description: "Build 3 enterprise-level applications with TypeScript",
+    topics: [
+      {
         title: "Enterprise Project 1: E-commerce Platform",
         lessons: [
-          "Project Architecture & Setup",
+          "Project Architecture & TypeScript Setup",
           "Product Catalog & Search",
           "Shopping Cart & Checkout",
           "Payment Integration & Order Management",
@@ -199,7 +370,7 @@ const Curriculum = () => {
             Full ReactJS Curriculum
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            A structured 4-week intensive program taking you from absolute beginner to confident React developer.
+            A structured 8-week intensive program taking you from JavaScript fundamentals to enterprise React developer with TypeScript.
           </p>
         </div>
       </section>

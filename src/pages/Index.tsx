@@ -18,7 +18,7 @@ const benefits = [
   {
     icon: BookOpen,
     title: "Comprehensive Curriculum",
-    description: "From components to advanced patterns, covering everything you need to master ReactJS in just 4 weeks.",
+    description: "From JavaScript fundamentals to TypeScript mastery, covering everything you need to master ReactJS in 8 weeks.",
   },
   {
     icon: Code,
@@ -33,9 +33,9 @@ const benefits = [
 ];
 
 const curriculumPreview = [
-  { level: "Week 1", topics: ["Components & JSX", "Props & State", "Event Handling", "Conditional Rendering"] },
-  { level: "Week 2", topics: ["React Hooks", "Context API", "React Router", "Forms & Validation"] },
-  { level: "Week 3-4", topics: ["Performance & Testing", "State Management", "3 Enterprise Apps", "React 19 Features"] },
+  { level: "Phase 1: JavaScript Fundamentals", topics: ["ES6+ Basics", "Async/Await", "Modules", "Advanced Patterns"] },
+  { level: "Phase 2: React with JavaScript", topics: ["React Fundamentals", "Hooks & Routing", "Performance & Testing", "State Management"] },
+  { level: "Phase 3: React with TypeScript", topics: ["TypeScript Basics", "Advanced TS Patterns", "React 19 Features", "3 Enterprise Apps"] },
 ];
 
 const Index = () => {
@@ -49,13 +49,15 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="code-font">{"⚛️ React"}</span>
-              <span>Master Class 2025</span>
+              <span>Master Class 2026</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              From Zero to React Hero in 4 Weeks
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
+              Industry-Focused React Training
             </h1>
-            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
+              Zero to Hero in 8 Weeks
+            </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Join thousands of developers who've transformed their careers with our comprehensive ReactJS training program. Go from beginner to job-ready with hands-on projects and expert guidance.
             </p>
@@ -129,7 +131,7 @@ const Index = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What You'll Learn</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A complete roadmap from React fundamentals to advanced concepts.
+            A complete roadmap from JavaScript fundamentals to enterprise React with TypeScript.
           </p>
         </div>
 

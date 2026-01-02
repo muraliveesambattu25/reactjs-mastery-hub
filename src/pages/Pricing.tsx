@@ -30,39 +30,17 @@ const plans = [
     originalPrice: "₹24,999",
     description: "Everything you need to master ReactJS",
     features: [
-      "Full 4-week intensive curriculum",
+      "Full 8-week intensive curriculum",
       "40+ hours of video content",
       "10+ hands-on projects",
       "3 Enterprise Applications",
       "Downloadable resources",
       "Certificate of completion",
-      "Lifetime access & updates",
-      "Community support",
     ],
     cta: "Enroll Now",
     variant: "default" as const,
     popular: true,
-  },
-  {
-    name: "Premium",
-    icon: Crown,
-    price: "₹24,999",
-    originalPrice: "₹39,999",
-    description: "Accelerate your learning with mentorship",
-    features: [
-      "Everything in Complete Course",
-      "3 Enterprise Applications",
-      "1-on-1 mentorship sessions (4x)",
-      "Code review for your projects",
-      "Resume & portfolio review",
-      "Job interview preparation",
-      "Private Slack access",
-      "Priority support",
-    ],
-    cta: "Get Premium Access",
-    variant: "default" as const,
-    popular: false,
-  },
+  }
 ];
 
 const faqs = [
@@ -107,7 +85,7 @@ const Pricing = () => {
 
       {/* Pricing Cards */}
       <SectionWrapper>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
@@ -169,22 +147,6 @@ const Pricing = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-      </SectionWrapper>
-
-      {/* Money Back Guarantee */}
-      <SectionWrapper className="bg-secondary">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="h-16 w-16 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-6">
-            <Check className="h-8 w-8 text-success" />
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            30-Day Money-Back Guarantee
-          </h2>
-          <p className="text-muted-foreground">
-            We're confident you'll love the course. If you're not completely satisfied within 30 days,
-            just email us and we'll give you a full refund – no questions asked.
-          </p>
         </div>
       </SectionWrapper>
 

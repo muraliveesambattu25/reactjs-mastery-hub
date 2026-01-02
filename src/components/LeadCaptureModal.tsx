@@ -42,6 +42,9 @@ interface LeadCaptureModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
+// API base URL from environment variable or default to localhost
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
 export function LeadCaptureModal({ open, onOpenChange }: LeadCaptureModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -60,18 +63,45 @@ export function LeadCaptureModal({ open, onOpenChange }: LeadCaptureModalProps) 
     setIsSubmitting(true);
     
     try {
-      // TODO: Save to database when Cloud is enabled
-      console.log("Lead captured:", data);
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      // Call backend API to capture lead and generate PDF
+      const response = await fetch(`${API_BASE_URL}/api/leads`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: data.fullName,
+          email: data.email,
+          skillLevel: data.skillLevel || '',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Failed to submit form');
+      }
+
       setIsSuccess(true);
       toast({
         title: "Success!",
-        description: "Your course guide is ready to download.",
+        description: result.message || "Your course guide is ready to download.",
       });
-      
+
+      // Trigger automatic PDF download
+      if (result.downloadUrl) {
+        const downloadLink = `${API_BASE_URL}${result.downloadUrl}`;
+        
+        // Create a temporary link and trigger download
+        const link = document.createElement('a');
+        link.href = downloadLink;
+        link.download = 'ReactJS-Course-Guide.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
       // Reset after 3 seconds and close
       setTimeout(() => {
         setIsSuccess(false);
@@ -79,9 +109,10 @@ export function LeadCaptureModal({ open, onOpenChange }: LeadCaptureModalProps) 
         onOpenChange(false);
       }, 3000);
     } catch (error) {
+      console.error('Error capturing lead:', error);
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: error instanceof Error ? error.message : "Something went wrong. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -100,7 +131,7 @@ export function LeadCaptureModal({ open, onOpenChange }: LeadCaptureModalProps) 
                 Get Your Free Course Guide
               </DialogTitle>
               <DialogDescription>
-                Enter your details below to download the complete 4-week ReactJS mastery curriculum guide.
+                Enter your details below to download the complete 8-week ReactJS mastery curriculum guide.
               </DialogDescription>
             </DialogHeader>
 

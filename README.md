@@ -1,14 +1,14 @@
 # ReactMastery - ReactJS Learning Platform
 
-A comprehensive ReactJS training platform designed to take students from beginner to advanced React developers through a structured 4-week intensive curriculum. The platform features a modern, responsive design built with React, TypeScript, and Tailwind CSS.
+A comprehensive ReactJS training platform designed to take students from JavaScript fundamentals to enterprise React developers through a structured 8-week intensive curriculum. The platform features a modern, responsive design built with React, TypeScript, and Tailwind CSS.
 
 ## Project Overview
 
 ReactMastery is an educational platform that offers:
-- **4-Week Intensive Curriculum**: From React fundamentals to advanced patterns
-- **Three Learning Levels**: Beginner, Intermediate, and Advanced
+- **8-Week Intensive Curriculum**: From JavaScript fundamentals to enterprise React with TypeScript
+- **Three Learning Phases**: Phase 1 (JavaScript Fundamentals), Phase 2 (React with JavaScript), Phase 3 (React with TypeScript)
 - **Project-Based Learning**: Hands-on React applications and portfolio projects
-- **Comprehensive Content**: Covers Hooks, Routing, State Management, Testing, Performance, and React 19 Features
+- **Comprehensive Content**: Covers ES6+, React Hooks, Routing, State Management, Testing, Performance, TypeScript, and React 19 Features
 
 ## Project info
 
@@ -46,6 +46,43 @@ npm i
 npm run dev
 ```
 
+## Backend Setup
+
+The project includes a backend API for lead capture and PDF generation:
+
+1. Navigate to backend directory:
+```sh
+cd backend
+```
+
+2. Install backend dependencies:
+```sh
+npm install
+```
+
+3. Create `.env` file in backend directory:
+```env
+PORT=3001
+NODE_ENV=development
+FRONTEND_URL=http://localhost:8080
+```
+
+4. Start the backend server:
+```sh
+npm run dev
+```
+
+5. Create `.env` file in project root for frontend:
+```env
+VITE_API_URL=http://localhost:3001
+```
+
+6. Start both frontend and backend:
+- Frontend: `npm run dev` (from project root)
+- Backend: `npm run dev` (from backend directory)
+
+See [backend/SETUP.md](backend/SETUP.md) for detailed setup instructions and troubleshooting.
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
@@ -64,11 +101,18 @@ npm run dev
 
 This project is built with:
 
+**Frontend:**
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+
+**Backend:**
+- Node.js + Express
+- SQLite (better-sqlite3)
+- PDFKit (PDF generation)
+- Zod (validation)
 
 ## How can I deploy this project?
 

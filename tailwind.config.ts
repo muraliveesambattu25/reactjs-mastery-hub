@@ -96,6 +96,14 @@ export default {
           "0%, 100%": { boxShadow: "0 0 20px hsl(var(--accent) / 0.3)" },
           "50%": { boxShadow: "0 0 40px hsl(var(--accent) / 0.5)" },
         },
+        "slide-in-from-right": {
+          from: { opacity: "0", transform: "translateX(100%)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
