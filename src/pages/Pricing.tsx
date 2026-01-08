@@ -45,7 +45,7 @@ const plans = [
 
 const faqs = [
   {
-    question: "How long do I have access to the course?",
+    question: "How long do I have access to the course? ",
     answer: "You have lifetime access! Once you enroll, you can access the course materials forever, including all future updates.",
   },
   {
