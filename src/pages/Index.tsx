@@ -54,7 +54,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
               Industry-Focused React Training
               <br />
-              Zero to Hero in 8 Weeks
+              Zero to Hero in 4 Weeks
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Join thousands of developers who've transformed their careers with our comprehensive ReactJS training program. Go from beginner to job-ready with hands-on projects and expert guidance.
