@@ -46,22 +46,21 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero text-primary-foreground py-20 md:py-32">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-react-blue/20 text-react-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="code-font">{"⚛️ React"}</span>
               <span>Master Class 2026</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
               Industry-Focused React Training
-            </h1>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
+              <br />
               Zero to Hero in 8 Weeks
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Join thousands of developers who've transformed their careers with our comprehensive ReactJS training program. Go from beginner to job-ready with hands-on projects and expert guidance.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
@@ -140,11 +139,10 @@ const Index = () => {
             <Card key={index} className="bg-card">
               <CardContent className="pt-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <div className={`h-8 w-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                    index === 0 ? "bg-success/20 text-success" :
-                    index === 1 ? "bg-accent/20 text-accent" :
-                    "bg-primary/20 text-primary"
-                  }`}>
+                  <div className={`h-8 w-8 rounded-full flex items-center justify-center text-sm font-bold ${index === 0 ? "bg-success/20 text-success" :
+                      index === 1 ? "bg-accent/20 text-accent" :
+                        "bg-primary/20 text-primary"
+                    }`}>
                     {index + 1}
                   </div>
                   <h3 className="text-xl font-semibold">{section.level}</h3>
