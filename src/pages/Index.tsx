@@ -51,7 +51,6 @@ const Index = () => {
               <span className="code-font">{"⚛️ React"}</span>
               <span>Master Class 2026</span>
             </div>
-
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight w-full">
               Industry-Focused React Training
               <br />
@@ -140,8 +139,8 @@ const Index = () => {
               <CardContent className="pt-6">
                 <div className="flex items-center gap-2 mb-4">
                   <div className={`h-8 w-8 rounded-full flex items-center justify-center text-sm font-bold ${index === 0 ? "bg-success/20 text-success" :
-                      index === 1 ? "bg-accent/20 text-accent" :
-                        "bg-primary/20 text-primary"
+                    index === 1 ? "bg-accent/20 text-accent" :
+                      "bg-primary/20 text-primary"
                     }`}>
                     {index + 1}
                   </div>
